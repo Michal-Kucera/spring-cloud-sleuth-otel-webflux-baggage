@@ -1,0 +1,8 @@
+logging:
+  pattern:
+    console: level=%level traceId=%X{traceId:--} spanId=%X{spanId:--} userId=%X{userId:--} thread=%thread message=%message %xException{full} %n
+  level:
+    root: INFO
+    com:
+      example:
+        demo: DEBUG
