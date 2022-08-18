@@ -1,3 +1,10 @@
+spring:
+  sleuth:
+    baggage:
+      correlation-fields:
+        - userId
+      tag-fields:
+        - userId
 logging:
   pattern:
     console: level=%level traceId=%X{traceId:--} spanId=%X{spanId:--} userId=%X{userId:--} thread=%thread message=%message %xException{full} %n
